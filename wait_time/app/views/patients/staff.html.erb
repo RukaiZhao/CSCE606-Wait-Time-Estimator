@@ -1,0 +1,41 @@
+<html>
+
+<body >
+
+<h1><%= flash[:notice]%></h1>
+<center>
+<p> <font size="24" style="font-size:60px;" color="GhostWhite" > ADMIN PAGE </font></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<br/>
+ 
+ <p></p>
+<form controller="patients", action="admin_log_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="kbnY2aybOio0+9eIzvxskyIco9/K0JkklvREatZMvQZXuXT5/yFqYSR0/lbknGjGGN/v7FVyvw6P66X9ljLZgw==" />
+  <div class="field", align="center">
+    <label style="font-size:40px;" for="Username">USERNAME</label>
+    <p></p>
+    <br/>
+
+    <input id="Username" size="30"  style="padding: 8px;" type="text"  name="Admin[name]" />
+  </div>
+<p></p>
+<br/>
+  <div class="field", align="center">
+    <label style="font-size:40px;" for="Password">PASSWORD</label>
+    <p></p>
+    <br/>
+    <input id="Password"  size="30"  style="padding: 8px;" type="text" name="Admin[password]" />
+  </div>
+<p></p>
+<br/>
+  <div class="actions", align="center">
+    <input type="submit" name="signin"  value="Sign in" data-disable-with="sign in" />
+  </div>
+</form>
+<p></p>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<h1>Editing Patient</h1>
+<h1 id="notice"><%= notice %></h1>
+
+
+<% patient= @patient %>
+<!DOCTYPE html>
+<!--<html>-->
+<!--<body style="background-color:powderblue">-->
+  
+  
+<!--<center><h1>New Patient</h1></center>-->
+
+<!--<form action="/patients/1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="kbnY2aybOio0+9eIzvxskyIco9/K0JkklvREatZMvQZXuXT5/yFqYSR0/lbknGjGGN/v7FVyvw6P66X9ljLZgw==" />-->
+<!--<p></p>-->
+  
+<!--  <input type="hidden" name="_method" value="patch" />-->
+
+<!--  <div class="field", align="center">-->
+<!--    <label for="patient_name">Name</label>-->
+<!--    <input id="patient_name" type="text" name="patient[name]" />-->
+<!--  </div>-->
+<!--<p></p>-->
+
+<!--  <div class="field", align="center">-->
+<!--    <label for="patient_number">Phone number</label>-->
+<!--    <input id="patient_number"  type="text" name="patient[number]" />-->
+<!--  </div>-->
+<!--<p></p>-->
+
+<!--  <div class="actions", align="center">-->
+<!--    <input type="submit" name="update"  value="update" data-disable-with="sign in" />-->
+<!--  </div>-->
+<!--</form>-->
+<!--<p></p>-->
+
+<!--<center><a href="/patients">Back</a></center>-->
+
+<!-- </body>-->
+<!--</html>-->-->
+
+<%= form_for @patient do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :number %>
+  <%= f.text_field :number %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Back', :admin_view %>
